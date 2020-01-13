@@ -13,3 +13,6 @@ steps:
 - task: Bash@3
   inputs:
     filePath: './fib.sh'
+- task: CmdLine@2
+  inputs:
+    script: './fib.sh 5'
