@@ -15,4 +15,6 @@ steps:
     filePath: './fib.sh'
 - task: CmdLine@2
   inputs:
-    script: './fib.sh 5'
+    script: |
+      chmod 777 ./fib.sh
+      ./fib.sh 5
